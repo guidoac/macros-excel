@@ -1,0 +1,11 @@
+'MACRO MUDAR COR AO DIGITAR PD
+
+Sub Mudarcor()
+    If (ActiveCell.Previous.Text = "PD") Then
+        ActiveCell.Previous.Interior.Color = 10461183
+    End If
+End Sub
+
+Private Sub Worksheet_Change(ByVal Target As Range)
+    Mudarcor
+End Sub
